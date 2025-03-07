@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  @apply bg-linear-to-br from-blue-200 to-yellow-100 dark:from-gray-700 dark:to-purple-300;
+}
